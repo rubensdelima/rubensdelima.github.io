@@ -1,5 +1,21 @@
 /* Main stylesheet */
-
+h2 {
+    color: #1f4045;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0%;
+}
+h3 {
+    color: #1f4045;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 0%;
+}
+p {
+    color: #333;
+    font-size: 1em;
+    margin: 0%;
+}
 /* Style for the body element */
 body {
     background-color: #e9e5e2;
@@ -18,8 +34,9 @@ body {
 }
 nav {
     background-color: #f8f8f8;
-    width: 100%;
-    padding: 10px 0;
+    width: 90%;
+    margin: 20px 0px;
+    padding: 20px 5%;
 }
 nav>ul {
     list-style-type: none;
@@ -29,7 +46,7 @@ nav>ul {
     justify-content: center;
 }
 nav>ul>li {
-    margin: 0 10px;
+    margin: 0 50px;
 }
 nav>ul>li>a {
     text-decoration: none;
@@ -63,4 +80,60 @@ header {
     width: 60%;
     height: auto;
     margin: 100px 0px;
+}
+#about {
+    width: 90%;
+    margin: 20px 0px;
+    padding: 20px 5%;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    
+}
+#portfolio {
+    width: 90%;
+    margin: 20px 0px;
+    padding: 20px 5%;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+}
+#projects {
+    width: 100%;
+    margin: 10px 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: row;
+    background-color: rgb(145, 62, 62);
+}
+.project {
+    width: 32%;
+    height: 300px;
+    margin: 1%;
+    padding: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    background-color: #e6b6b6;
+}
+.project>img {
+    width: 100%;
+    height: auto;
+}
+#contact {
+    width: 90%;
+    margin: 20px 0px;
+    padding: 20px 5%;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
 }
