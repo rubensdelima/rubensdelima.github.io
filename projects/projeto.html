@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rubens Rodrigues | Graphic Design Portfolio</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../style.css">
+
+    <!-- Link Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body id="home">
+    <div id="container">
+        <nav id="menu">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Skills</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+            </ul>
+        </nav>
+
+        <div id=menu-scroll>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Skills</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#home">Back to Top</a></li>
+            </ul>
+        </div>
+        
+        <!-- PORTFOLIO SECTION -->
+        <section id="portfolio">
+            <h2>Project Title</h2>
+             <div id="project-details">
+                <img src="../images/projects/project-cover.png" alt="Project 1">
+                <img src="../images/projects/project-cover.png" alt="Project 2">
+                <img src="../images/projects/project-cover.png" alt="Project 3">
+
+             </div>
+        </section>
+
+        <section id="contact">
+        <h2>Contact Me</h2>
+        <ul>
+            <li><a href="https://wa.me/5551982945113" target="_blank"><img src="../images/whatsapp.png" alt="whatsapp"></a></li>
+            <li><a href="mailto:rubensrodriguesdelima@gmail.com" target="_blank"><img src="../images/email.png" alt="email"></a></li>
+            <li><a href="https://www.linkedin.com/in/rubens-r/" target="_blank"><img src="../images/linkedin.png" alt="linkedin"></a></li>
+            <li><a href="https://www.instagram.com/rubensdelima/" target="_blank"><img src="../images/instagram.png" alt="instagram"></a></li>
+        </ul>
+        </section>
+    </div>
+
+    <footer>
+        <p>Coded by: Me</p>
+    </footer>
+    
+    <!-- Scroll Menu Script-->
+    <script>
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                document.getElementById("menu-scroll").style.top = "0";
+            } else {
+                document.getElementById("menu-scroll").style.top = "-60px";
+            }
+        }
+    </script>
+</body>
+</html>

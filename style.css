@@ -1,4 +1,7 @@
 /* Main stylesheet */
+html {
+  scroll-behavior: smooth;
+}
 h2 {
     color: #1f4045;
     font-size: 1.2em;
@@ -19,9 +22,7 @@ p {
     margin: 0%;
     text-transform: lowercase;
 }
-img {
-    pointer-events: none;
-}
+
 /* Style for the body element */
 body {
     background: #1F4145;
@@ -38,7 +39,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-width: 80%;
+    width: 80%;
 
 }
 nav {
@@ -58,10 +59,44 @@ nav>ul>li {
 }
 nav>ul>li>a {
     text-decoration: none;
-    color: #ffffff;
+    color: #f4f2f1;
     font-weight: bold;
     text-transform: uppercase;
     font-size: 1em;
+    transition: 0.3s;
+}
+nav>ul>li>a:hover {
+    color: #7f9491;
+}
+#menu-scroll {
+  background-color: #1f4045;
+  position: fixed;
+  top: -60px;
+  width: 100%;
+  display: block;
+  transition: top .3s;
+  z-index: 100;
+}
+#menu-scroll>ul {
+    list-style-type: none;
+    max-width: 80%;
+    margin: auto;
+    padding: 0;
+}
+#menu-scroll>ul>li>a {
+  float: left;
+  display: block;
+  color: #f4f2f1;
+  text-align: center;
+  padding: 15px 25px;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+#menu-scroll>ul>li>a:hover {
+  color: #7f9491;
 }
 header {
     display: flex;
@@ -69,8 +104,11 @@ header {
     align-items: center;
     width: 100%;
     margin: 10px 0px;
-    background-color: #f8f8f8;
+    background-color: #f4f2f1;
     border-radius: 3px;
+}
+header>section>img {
+    pointer-events: none;
 }
 #logo-box {
     display: flex;
@@ -98,12 +136,13 @@ header {
     margin: 10px 0px;
     padding: 20px 2%;
     display: flex;
-    display: none;
+    /* display: none; */
     justify-content: center;
     align-items: left;
     flex-direction: column;
-    background-color: rgb(255, 255, 255);
+    background-color:#f4f2f1;
     border-radius: 3px;
+    scroll-margin-top: 60px;
 }
 #skills {
     width: 100%;
@@ -115,6 +154,7 @@ header {
     row-gap: 5px;
     justify-content: left;
     align-items: left;
+    
 }
 .skill {
     width: 100%;
@@ -125,11 +165,16 @@ header {
     justify-content: center;
     align-items: left;
     flex-direction: column;
-    background-color: #d1d1d1;
 }
 .skill>img {
     width: 100%;
     height: auto;
+    border-radius: 3px;
+    opacity: 1;
+    transition: 0.3s;
+}
+.skill>img:hover {
+    opacity: .8;
 }
 #portfolio {
     width: 96%;
@@ -139,15 +184,16 @@ header {
     justify-content: center;
     align-items: left;
     flex-direction: column;
-    background-color: rgb(255, 255, 255);
+    background-color: #f4f2f1;
     border-radius: 3px;
+    scroll-margin-top: 60px;
 }
 #projects {
     width: 100%;
     margin: 10px 0px;
     padding: 0px;
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto auto auto;
     column-gap: 5px;
     row-gap: 5px;
     justify-content: left;
@@ -158,14 +204,31 @@ header {
     height: auto;
     aspect-ratio: 4/5;
     padding: 0%;
-    background-color: #333;
     border-radius: 3px;
     overflow: hidden;
 }
 .project>a>img {
     max-width: 100%;
-    
     height: auto;
+    opacity: 1;
+    transition: 0.3s;
+}
+.project>a>img:hover {
+    opacity: .8;
+}
+#project-details {
+    width: 100%;
+    margin: 10px 0px;
+    padding: 0px;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: left;
+    align-items: left;
+    row-gap: 15px;
+}
+#project-details>img {
+    width: 100%;
+    border-radius: 3px;
 }
 #contact {
     width: 96%;
@@ -177,7 +240,7 @@ header {
     flex-direction: column;
 }
 #contact>h2 {
-    color: #ffffff;
+    color: #f4f2f1;
     margin-bottom: 15px;
     font-size: 1em;
 }
@@ -193,8 +256,13 @@ header {
 }
 #contact>ul>li>a>img {
     width: 45px;
+    opacity: 1;
+    transition: 0.3s;
+}
+#contact>ul>li>a>img:hover {
+    opacity: .8;
 }
 footer>p {
-    color: #ffffff;
+    color: #1f4045;
     margin: 15px;
 }
