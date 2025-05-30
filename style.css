@@ -1,64 +1,76 @@
 /* Main stylesheet */
 h2 {
     color: #1f4045;
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-weight: bold;
-    margin: 0%;
+    margin: 0 0 5px 0;
+    text-transform: uppercase;
 }
 h3 {
     color: #1f4045;
     font-size: 1.2em;
     font-weight: bold;
     margin: 0%;
+    text-transform: uppercase;
 }
 p {
     color: #333;
     font-size: 1em;
     margin: 0%;
+    text-transform: lowercase;
+}
+img {
+    pointer-events: none;
 }
 /* Style for the body element */
 body {
-    background-color: #e9e5e2;
+    background: #1F4145;
+    background: linear-gradient(135deg, rgba(51, 51, 51, 1) 0%, rgba(31, 65, 69, 1) 25%, rgba(127, 148, 145, 1) 75%, rgba(235, 204, 195, 1) 100%);
     font-family: Jost, sans-serif;
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin: 0;
+    padding: 0;
 }
 #container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
     max-width: 80%;
+
 }
 nav {
-    background-color: #f8f8f8;
-    width: 90%;
-    margin: 20px 0px;
-    padding: 20px 5%;
+    width: 96%;
+    margin: 10px 0px;
+    padding: 20px 2%;
 }
 nav>ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: center;
+    justify-content: left;
 }
 nav>ul>li {
-    margin: 0 50px;
+    margin: 0 50px 0 0;
 }
 nav>ul>li>a {
     text-decoration: none;
-    color: #1f4045;
+    color: #ffffff;
     font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1em;
 }
 header {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
+    margin: 10px 0px;
     background-color: #f8f8f8;
+    border-radius: 3px;
 }
 #logo-box {
     display: flex;
@@ -79,61 +91,110 @@ header {
 #photo {
     width: 60%;
     height: auto;
-    margin: 100px 0px;
+    margin: 50px 0px;
 }
 #about {
-    width: 90%;
-    margin: 20px 0px;
-    padding: 20px 5%;
+    width: 96%;
+    margin: 10px 0px;
+    padding: 20px 2%;
     display: flex;
+    display: none;
     justify-content: center;
     align-items: left;
     flex-direction: column;
     background-color: rgb(255, 255, 255);
-    
+    border-radius: 3px;
 }
-#portfolio {
-    width: 90%;
-    margin: 20px 0px;
-    padding: 20px 5%;
-    display: flex;
-    justify-content: center;
-    align-items: left;
-    flex-direction: column;
-    background-color: rgb(255, 255, 255);
-}
-#projects {
+#skills {
     width: 100%;
     margin: 10px 0px;
     padding: 0px;
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 5px;
+    row-gap: 5px;
+    justify-content: left;
     align-items: left;
-    flex-direction: row;
-    background-color: rgb(145, 62, 62);
 }
-.project {
-    width: 32%;
-    height: 300px;
-    margin: 1%;
+.skill {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 5/4;
     padding: 0%;
     display: flex;
     justify-content: center;
     align-items: left;
     flex-direction: column;
-    background-color: #e6b6b6;
+    background-color: #d1d1d1;
 }
-.project>img {
+.skill>img {
     width: 100%;
     height: auto;
 }
-#contact {
-    width: 90%;
-    margin: 20px 0px;
-    padding: 20px 5%;
+#portfolio {
+    width: 96%;
+    margin: 10px 0px;
+    padding: 20px 2%;
     display: flex;
     justify-content: center;
     align-items: left;
     flex-direction: column;
     background-color: rgb(255, 255, 255);
+    border-radius: 3px;
+}
+#projects {
+    width: 100%;
+    margin: 10px 0px;
+    padding: 0px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 5px;
+    row-gap: 5px;
+    justify-content: left;
+    align-items: left;
+}
+.project {
+    width: auto;
+    height: auto;
+    aspect-ratio: 4/5;
+    padding: 0%;
+    background-color: #333;
+    border-radius: 3px;
+    overflow: hidden;
+}
+.project>a>img {
+    max-width: 100%;
+    
+    height: auto;
+}
+#contact {
+    width: 96%;
+    margin: 10px 0px 20px 0px;
+    padding: 20px 2%;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+}
+#contact>h2 {
+    color: #ffffff;
+    margin-bottom: 15px;
+    font-size: 1em;
+}
+#contact>ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: left;
+}
+#contact>ul>li {
+    margin: 0px 20px 0 0;
+}
+#contact>ul>li>a>img {
+    width: 45px;
+}
+footer>p {
+    color: #ffffff;
+    margin: 15px;
 }
