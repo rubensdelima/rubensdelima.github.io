@@ -159,7 +159,7 @@ header>section>img {
 .skill {
     width: 100%;
     height: auto;
-    aspect-ratio: 5/4;
+    aspect-ratio: 16/9;
     padding: 0%;
     display: flex;
     justify-content: center;
@@ -188,7 +188,7 @@ header>section>img {
     border-radius: 3px;
     scroll-margin-top: 60px;
 }
-#projects {
+.project-cat {
     width: 100%;
     margin: 10px 0px;
     padding: 0px;
