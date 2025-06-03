@@ -193,7 +193,7 @@ header>section>img {
     margin: 10px 0px;
     padding: 0px;
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto auto auto;
     column-gap: 5px;
     row-gap: 5px;
     justify-content: left;
@@ -217,18 +217,19 @@ header>section>img {
     opacity: .8;
 }
 #project-details {
-    width: 100%;
-    margin: 10px 0px;
+    width: 80%;
+    margin: 50px auto;
     padding: 0px;
     display: grid;
     grid-template-columns: 1fr;
-    justify-content: left;
-    align-items: left;
+    justify-content: center;
+    align-items: center;
     row-gap: 15px;
 }
 #project-details>img {
     width: 100%;
     border-radius: 3px;
+    margin: 0 auto;
 }
 #contact {
     width: 96%;
