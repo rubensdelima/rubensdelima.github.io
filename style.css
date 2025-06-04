@@ -44,10 +44,15 @@ body {
 }
 nav {
     width: 96%;
+    height: 30px;
     margin: 10px 0px;
-    padding: 20px 2%;
+    padding: 10px 2%;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
 }
 nav>ul {
+    width: 100%;
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -67,6 +72,20 @@ nav>ul>li>a {
 }
 nav>ul>li>a:hover {
     color: #7f9491;
+}
+.contact {
+    display: flex;
+    justify-content: right;
+    margin-right: 0;
+}
+.contact>li {
+    margin: 0  0 0 30px;
+    width: 30px;
+    height: 30px;
+}
+.contact img {
+    width: 30px;
+    height: 30px;
 }
 #menu-scroll {
   background-color: #1f4045;
@@ -159,7 +178,7 @@ header>section>img {
 .skill {
     width: 100%;
     height: auto;
-    aspect-ratio: 5/4;
+    aspect-ratio: 16/9;
     padding: 0%;
     display: flex;
     justify-content: center;
@@ -188,9 +207,9 @@ header>section>img {
     border-radius: 3px;
     scroll-margin-top: 60px;
 }
-#projects {
+.project-cat {
     width: 100%;
-    margin: 10px 0px;
+    margin: 10px 0px 30px 0px;
     padding: 0px;
     display: grid;
     grid-template-columns: auto auto auto;
@@ -207,13 +226,13 @@ header>section>img {
     border-radius: 3px;
     overflow: hidden;
 }
-.project>a>img {
+.project>img {
     max-width: 100%;
     height: auto;
     opacity: 1;
     transition: 0.3s;
 }
-.project>a>img:hover {
+.project>img:hover {
     opacity: .8;
 }
 #project-details {
