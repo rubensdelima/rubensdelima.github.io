@@ -3,21 +3,21 @@ html {
   scroll-behavior: smooth;
 }
 h2 {
-    color: #1f4045;
+    color: #000000;
     font-size: 1.2em;
-    font-weight: bold;
+    font-weight: 300;
     margin: 0 0 5px 0;
     text-transform: uppercase;
 }
 h3 {
-    color: #1f4045;
+    color: #000000;
     font-size: 1.2em;
     font-weight: bold;
     margin: 0%;
     text-transform: uppercase;
 }
 p {
-    color: #333;
+    color: #000000;
     font-size: 1em;
     margin: 0%;
     text-transform: lowercase;
@@ -25,9 +25,10 @@ p {
 
 /* Style for the body element */
 body {
-    background: #1F4145;
-    background: linear-gradient(135deg, rgba(51, 51, 51, 1) 0%, rgba(31, 65, 69, 1) 25%, rgba(127, 148, 145, 1) 75%, rgba(235, 204, 195, 1) 100%);
+    background: #fff;
+    
     font-family: Jost, sans-serif;
+    font-style: italic;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -39,7 +40,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 80%;
+    width: 90%;
 
 }
 nav {
@@ -65,13 +66,13 @@ nav>ul>li {
 nav>ul>li>a {
     text-decoration: none;
     color: #f4f2f1;
-    font-weight: bold;
+    font-weight: 300;
     text-transform: uppercase;
     font-size: 1em;
     transition: 0.3s;
 }
 nav>ul>li>a:hover {
-    color: #7f9491;
+    color: #838383;
 }
 .contact {
     display: flex;
@@ -88,7 +89,7 @@ nav>ul>li>a:hover {
     height: 30px;
 }
 #menu-scroll {
-  background-color: #1f4045;
+  background-color: #000000;
   position: fixed;
   top: -60px;
   width: 100%;
@@ -98,33 +99,34 @@ nav>ul>li>a:hover {
 }
 #menu-scroll>ul {
     list-style-type: none;
-    max-width: 80%;
+    max-width: 90%;
     margin: auto;
     padding: 0;
 }
 #menu-scroll>ul>li>a {
   float: left;
   display: block;
-  color: #f4f2f1;
+  color: #ffffff;
   text-align: center;
   padding: 15px 25px;
   text-decoration: none;
   font-size: 1em;
-  font-weight: bold;
+  font-weight: 400;
   text-transform: uppercase;
   transition: 0.3s;
+  
 }
 #menu-scroll>ul>li>a:hover {
-  color: #7f9491;
+  color: #838383;
 }
 header {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
+    height: 100vh;
     margin: 10px 0px;
-    background-color: #f4f2f1;
-    border-radius: 3px;
+    background-color: #fff;
 }
 header>section>img {
     pointer-events: none;
@@ -143,10 +145,11 @@ header>section>img {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40%;
+    width: auto;
+
 }
 #photo {
-    width: 60%;
+    width: 50%;
     height: auto;
     margin: 50px 0px;
 }
@@ -163,38 +166,7 @@ header>section>img {
     border-radius: 3px;
     scroll-margin-top: 60px;
 }
-#skills {
-    width: 100%;
-    margin: 10px 0px;
-    padding: 0px;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    column-gap: 5px;
-    row-gap: 5px;
-    justify-content: left;
-    align-items: left;
-    
-}
-.skill {
-    width: 100%;
-    height: auto;
-    aspect-ratio: 16/9;
-    padding: 0%;
-    display: flex;
-    justify-content: center;
-    align-items: left;
-    flex-direction: column;
-}
-.skill>img {
-    width: 100%;
-    height: auto;
-    border-radius: 3px;
-    opacity: 1;
-    transition: 0.3s;
-}
-.skill>img:hover {
-    opacity: .8;
-}
+
 #portfolio {
     width: 96%;
     margin: 10px 0px;
@@ -203,13 +175,13 @@ header>section>img {
     justify-content: center;
     align-items: left;
     flex-direction: column;
-    background-color: #f4f2f1;
+    background-color: #fff;
     border-radius: 3px;
     scroll-margin-top: 60px;
 }
 .project-cat {
     width: 100%;
-    margin: 10px 0px 30px 0px;
+    margin: 10px 0px 100px 0px;
     padding: 0px;
     display: grid;
     grid-template-columns: auto auto auto;
@@ -217,20 +189,26 @@ header>section>img {
     row-gap: 5px;
     justify-content: left;
     align-items: left;
+
 }
 .project {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: auto;
-    height: auto;
     aspect-ratio: 4/5;
     padding: 0%;
-    border-radius: 3px;
     overflow: hidden;
+
 }
 .project>img {
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
     opacity: 1;
     transition: 0.3s;
+    margin: 0 auto;
+    border: 1px solid #7a7a7a;
+    padding: 5%;
 }
 .project>img:hover {
     opacity: .8;
@@ -260,7 +238,7 @@ header>section>img {
     flex-direction: column;
 }
 #contact>h2 {
-    color: #f4f2f1;
+    color: #000000;
     margin-bottom: 15px;
     font-size: 1em;
 }
@@ -283,6 +261,6 @@ header>section>img {
     opacity: .8;
 }
 footer>p {
-    color: #1f4045;
+    color: #000000;
     margin: 15px;
 }
