@@ -12,7 +12,7 @@ h2 {
     color: #000000;
     font-size: 1.2em;
     font-weight: 300;
-    margin: 0 0 5px 0;
+    margin: 0 0 5px 15px;
     text-transform: uppercase;
 }
 h3 {
@@ -120,7 +120,7 @@ nav>ul>li>a:hover {
   padding: 15px 25px;
   text-decoration: none;
   font-size: 1em;
-  font-weight: 400;
+  font-weight: 300;
   text-transform: uppercase;
   transition: 0.3s;
 }
@@ -232,7 +232,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 90%;
+    width: 95%;
     margin: auto;
     padding: 0%;
     overflow: hidden;
@@ -240,7 +240,7 @@ header {
 .project-v>iframe {
     width: 540;
     height: auto;
-    margin: 25px auto;
+    margin: 2.5% auto;
     border: 1px solid #7a7a7a;
     padding: 5%;
     aspect-ratio: 9/16;
@@ -275,12 +275,12 @@ header {
 #contact>h2 {
     color: #000000;
     margin-bottom: 15px;
-    font-size: 1em;
+    
 }
 #contact>ul {
     list-style-type: none;
     padding: 0;
-    margin: 0;
+    margin: 0 0 0 5px;
     display: flex;
     justify-content: left;
 }
@@ -300,8 +300,8 @@ footer>p {
     margin: 15px;
     text-transform: uppercase;
     font-weight: 300;
-    font-size: 0.8em;
+    font-size: 0.9em;
 }
 #graphic-design,#motion-video {
-    scroll-padding-top: 60px;
+    scroll-padding-top: 600px;
 }
