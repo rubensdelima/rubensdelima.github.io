@@ -199,6 +199,64 @@ header {
     border-radius: 3px;
     scroll-margin-top: 60px;
 }
+.project-bio {
+    width: 100%;
+    margin: 10px 0px 200px 0px;
+    padding: 0px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 5px;
+    row-gap: 5px;
+    justify-content: left;
+    align-items: left;
+}
+.bio-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    padding: 0%;
+    overflow: hidden;
+}
+.bio-photo>img {
+    width: 85%;
+    height: auto;
+    opacity: 1;
+    transition: 0.2s;
+    margin: 2.5% auto;
+    border: 1px solid #7a7a7a;
+    padding: 5%;
+}
+.bio-photo>img:hover {
+    border: 1px solid #000000;
+}
+.bio-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    padding: 0%;
+    overflow: hidden;
+    width: 100%;
+}
+.bio-text>div {
+    width: 93%;
+    opacity: 1;
+    transition: 0.2s;
+    margin: 2.5% auto;
+    border: 1px solid #7a7a7a;
+    padding: 2.5%;
+}
+.bio-text>div:hover {
+    border: 1px solid #000000;
+}
+.bio-text>div>h2 {
+    padding: 0;
+    margin: 0;
+}
+.bio-text>div>p {
+    font-weight: 300;
+}
 .project-cat {
     width: 100%;
     margin: 10px 0px 100px 0px;
@@ -347,6 +405,69 @@ h2 {
     padding: 0%;
     margin: auto;
     overflow: hidden;
+}
+
+.project-bio {
+    width: 100%;
+    margin: 10px 0px 200px 0px;
+    padding: 0px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    column-gap: 5px;
+    row-gap: 5px;
+    justify-content: left;
+    align-items: left;
+}
+.bio-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    padding: 0%;
+    overflow: hidden;
+}
+.bio-photo>img {
+    width: 85%;
+    height: auto;
+    opacity: 1;
+    transition: 0.2s;
+    margin: 2.5% auto;
+    border: 1px solid #7a7a7a;
+    padding: 5%;
+}
+.bio-photo>img:hover {
+    border: 1px solid #000000;
+}
+.bio-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    padding: 0%;
+    overflow: hidden;
+    width: 100%;
+}
+.bio-text>div {
+    width: 93%;
+    opacity: 1;
+    transition: 0.2s;
+    margin: 2.5% auto;
+    border: 1px solid #7a7a7a;
+    padding: 2.5%;
+}
+.bio-text>div>p {
+    font-size: 0.9em;
+}
+.bio-text>div:hover {
+    border: 1px solid #000000;
+}
+.bio-text>div>h2 {
+    padding: 0;
+    margin: 0;
+}
+.bio-text>div>p {
+    font-weight: 300;
 }
 
 .project-cat {
