@@ -149,7 +149,7 @@ header {
     margin: 10px 0px 100px 0px;
     padding: 0px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     column-gap: 5px;
     row-gap: 5px;
     justify-content: center;
@@ -173,7 +173,7 @@ header {
     margin: 25px auto;
     border: 1px solid #7a7a7a;
     padding: 5%;
-    aspect-ratio: 1/1;
+    
     text-decoration: none;
     font-size: 1em;
     font-weight: 400;
@@ -201,7 +201,7 @@ header {
 }
 .project-bio {
     width: 100%;
-    margin: 10px 0px 200px 0px;
+    margin: 100px 0px 50px 0px;
     padding: 0px;
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -219,7 +219,17 @@ header {
     overflow: hidden;
 }
 .bio-photo>img {
-    width: 85%;
+    width: 65%;
+    height: auto;
+    opacity: 1;
+    transition: 0.2s;
+    margin: 2.5% auto;
+    border: 1px solid #7a7a7a;
+    padding: 5%;
+}
+.lottie {
+    aspect-ratio: 1/1;
+    width: 66%;
     height: auto;
     opacity: 1;
     transition: 0.2s;
@@ -245,7 +255,8 @@ header {
     transition: 0.2s;
     margin: 2.5% auto;
     border: 1px solid #7a7a7a;
-    padding: 2.5%;
+    padding: 2.5% 5%;
+
 }
 .bio-text>div:hover {
     border: 1px solid #000000;
@@ -255,6 +266,10 @@ header {
     margin: 0;
 }
 .bio-text>div>p {
+    font-weight: 300;
+}
+.desc {
+    margin-left: 15px;
     font-weight: 300;
 }
 .project-cat {
@@ -324,36 +339,38 @@ header {
     border-radius: 3px;
     margin: 0 auto;
 }
-#contact {
+.contact {
     width: 96%;
     margin: 10px 0px 20px 0px;
-    padding: 20px 2%;
+    padding: 20px 0%;
     display: flex;
     justify-content: center;
     align-items: left;
     flex-direction: column;
 }
-#contact>h2 {
+.contact>h2 {
     color: #000000;
     margin-bottom: 15px;
     
 }
-#contact>ul {
+.contact>ul {
     list-style-type: none;
     padding: 0;
-    margin: 0 0 0 5px;
+    margin: 0 0 0 0px;
     display: flex;
     justify-content: left;
 }
-#contact>ul>li {
-    margin: 0px 20px 0 0;
+.contact>ul>li {
+    display: flex;
+    margin: 0px 40px 0 0px;
+    align-items: center;
 }
-#contact>ul>li>a>img {
-    width: 45px;
+.contact>ul>li>a>img {
+    width: 35px;
     opacity: 1;
     transition: 0.3s;
 }
-#contact>ul>li>a>img:hover {
+.contact>ul>li>a>img:hover {
     opacity: .8;
 }
 footer>p {
@@ -387,12 +404,12 @@ h2 {
 #header-menu {
     scroll-margin-top: 60px;
     width: 100%;
-    margin: 50px 0px 100px 0px;
+    margin: 0px 0px 50px 0px;
     padding: 0px;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    column-gap: 5px;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 0px;
     row-gap: 5px;
     justify-content: center;
     align-items: center;
@@ -401,7 +418,7 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 60%;
+    width: 100%;
     padding: 0%;
     margin: auto;
     overflow: hidden;
@@ -409,7 +426,7 @@ h2 {
 
 .project-bio {
     width: 100%;
-    margin: 10px 0px 200px 0px;
+    margin: 10px 0px 50px 0px;
     padding: 0px;
     display: grid;
     grid-template-columns: 1fr;
@@ -438,6 +455,9 @@ h2 {
 }
 .bio-photo>img:hover {
     border: 1px solid #000000;
+}
+.lottie {
+    width: 88%;
 }
 .bio-text {
     display: flex;
