@@ -4,6 +4,15 @@ html {
   cursor: crosshair;
   cursor: url('images/menu/cursor-01.png'), auto;
 }
+::-moz-selection { /* Code for Firefox */
+  color: rgb(255, 255, 255);
+  background: #838383;
+}
+
+::selection {
+  color: rgb(255, 255, 255);
+  background: #838383;
+}
 a {
     cursor: cell;
     cursor: url('images/menu/cursor-01.png'), auto;
@@ -187,6 +196,28 @@ header {
 }
 
 /* PORTFOLIO */
+.couponcode:hover .coupontooltip {
+    display: block;
+}
+
+
+.coupontooltip {
+    display: none;
+    background: #fbfcfb;
+    border: 1px solid black;
+    margin-left: 28px;
+    margin-top: 20px;
+    padding: 10px;
+    position: absolute;
+    z-index: 1000;
+    min-width:150px;
+    height:auto;
+}
+
+.couponcode {
+    
+}
+
 #portfolio {
     width: 96%;
     margin: 10px 0px;
