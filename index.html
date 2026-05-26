@@ -12,8 +12,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.9.14/dist/dotlottie-wc.js" type="module"></script>
 </head>
 <body id="home">
+    <dotlottie-wc class="lottie-bg"
+                    src="https://lottie.host/79120918-6992-487e-9a91-1f2b087ae1ea/txlKEdzyHx.lottie"
+                    speed="0.6"
+                    autoplay
+                    loop
+                    ></dotlottie-wc>
     <div id="container">
 
         <div id=menu-scroll>
@@ -31,24 +39,21 @@
             <div class="project-bio">
                 
                 <div class="bio-photo">
-                    <script
-                    src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.9.14/dist/dotlottie-wc.js"
-                    type="module"
-                    ></script>
-
+                    
                     <dotlottie-wc class="lottie"
                     src="https://lottie.host/79120918-6992-487e-9a91-1f2b087ae1ea/txlKEdzyHx.lottie"
                     speed="0.6"
-                    autoplay
+                    
                     loop
                     ></dotlottie-wc>
+                    
                 </div>
                 <div class="bio-text">
                     <div><br>
                         <h2>RUBENS RODRIGUES // 32 // PORTFÓLIO</h2><br>
                         <p>designer gráfico, motion designer e editor de vídeo. apaixonado por design, arte, música, tecnologia e artesanato. sempre em busca de desenvolvimento e oportunidades para crescimento pessoal e profissional</p><br>
                         <p>conhecimentos // photoshop, illustrator, figma, premiere, after effects, cavalry, blender, html, css</p><br>
-                        <p>habilidades // desenvolvimento e aplicação de KVs, desdobramento de criativos para redes sociais e anúncios, aplicação consistente de idetidades visuais, layouts para landing pages e email marketing, edição de vídeo e motion design</p>
+                        <p>habilidades // direção de arte, desenvolvimento e aplicação de KVs, criativos para redes sociais e anúncios, aplicação de ID visual, layouts para landing pages e email marketing, edição de vídeo e motion design</p>
                         <br>
                         <div class="contact">
                             <ul>
@@ -83,13 +88,15 @@
             <div class="project-cat"> 
                 <div class="project couponcode">
                     <img loading="lazy" src="images/projects/SALUÁ/salua-posts-01.png" alt="SALUÁ Social Media">
-                    <!--<span class="coupontooltip">Content 1</span>-->
+                    <!--<span class="coupontooltip">redesign de cards para a Saluá Pâtisserie</span>-->
                 </div>
-                <div class="project">
+                <div class="project couponcode">
                     <img loading="lazy" src="images/projects/SALUÁ/salua-posts-02.png" alt="SALUÁ Social Media">
+                    <!--<span class="coupontooltip">redesign de cards para a Saluá Pâtisserie</span>-->
                 </div>
-                <div class="project">
+                <div class="project couponcode">
                     <img loading="lazy" src="images/projects/SALUÁ/salua-posts-03.png" alt="SALUÁ Social Media">
+                    <!--<span class="coupontooltip">redesign de cards para a Saluá Pâtisserie</span>-->
                 </div>
                 <div class="project">
                     <img loading="lazy" src="images/projects/FIORI/Fiori-Posts-01.png" alt="FIORI Social Media">
@@ -172,12 +179,13 @@
             </div>
 
             <h2>DESIGN GRÁFICO // PROJETOS PESSOAIS // POSTERS</h2>
+            <p class="desc">projetos autorais explorando conceitos e técnicas</p>
             <div class="project-cat">
                 <div class="project">
-                    <img loading="lazy" src="images/projects/RUBENS/dopamine_mockup.png" alt="Dopamine">
+                    <img loading="lazy" src="images/projects/RUBENS/dopamine.png" alt="Dopamine">
                 </div>
                 <div class="project">
-                    <img loading="lazy" src="images/projects/RUBENS/ceremonials_mockup.png" alt="Ceremonials">
+                    <img loading="lazy" src="images/projects/RUBENS/ceremonials-tour.jpg" alt="Ceremonials">
                 </div>
                 <div class="project">
                     <img loading="lazy" src="images/projects/RUBENS/daft-punk.png" alt="PROTOTYPE">
@@ -186,11 +194,12 @@
                     <img loading="lazy" src="images/projects/RUBENS/with-every-heartbeat-mockup.jpg" alt="With Every Heartbeat">
                 </div>
                 <div class="project">
-                    <img loading="lazy" src="images/projects/RUBENS/house_mockup.png" alt="House">
+                    <img loading="lazy" src="images/projects/RUBENS/jaloo-every-once-in-your-eyes.png" alt="The Good Side">
                 </div>
                 <div class="project">
-                    <img loading="lazy" src="images/projects/RUBENS/the-good-side-mockup.jpg" alt="The Good Side">
+                    <img loading="lazy" src="images/projects/RUBENS/house.jpg" alt="House">
                 </div>
+                
             </div>
             
             <h2 id="motion-video">MOTION DESIGN & VÍDEO</h2>
@@ -239,7 +248,7 @@
         window.onscroll = function() {scrollFunction()};
 
         function scrollFunction() {
-            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
                 document.getElementById("menu-scroll").style.top = "0";
             } else {
                 document.getElementById("menu-scroll").style.top = "-160px";
