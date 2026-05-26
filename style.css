@@ -271,7 +271,7 @@ header {
 .lottie-bg {
     position: fixed;
     z-index: -1;
-    top: 2.5%;
+    top: 3%;
     left: -14%;
     width: 70%;
 }
@@ -290,7 +290,9 @@ header {
     vertical-align: middle;
 }
 .bio-text>div {
-    
+    width: 100%;
+    height: fit-content;
+    margin-top: 7%;
 }
 .bio-text:hover {
     border: 1px solid #000000;
