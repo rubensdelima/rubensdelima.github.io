@@ -92,9 +92,11 @@ p {
 #menu-tracklist {
     display: inline;
     position: fixed;
-    right: 50px;
+    right: 80px;
     top: 20%;
+    width: 25%;
     text-align: right;
+    background-color: #00adee;
 }
 #menu-tracklist > ul {
     margin: 40px 0px;
@@ -116,12 +118,15 @@ p {
     letter-spacing: 1px;
 }
 #menu-tracklist h3 {
+    transform-origin: 50 50;
     transform: rotate(90deg);
-    position: absolute;
-    top: 60px;
-    right: 0;
+    position: relative;
+    top: -100px;
+    right: -50;
     margin: 0;
     padding: 0;
+    text-align: left;
+    border: 1px solid red;
 }
 /*
 #side-a::after {
@@ -142,6 +147,12 @@ p {
     margin-left: auto;
     margin-right: auto;
     background-color: blue;
+}
+#playlist {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
 }
 footer {
     position: fixed;
