@@ -1,0 +1,167 @@
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: "Gabarito", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 18;
+    font-weight: 700;
+    font-style: normal;
+    height: 100%;
+    margin: 0;
+}
+#container {
+    width: calc(100vw - 100px);
+    height: 100vh;
+    margin: 0 auto 0 auto;
+    padding: 0;
+}
+header {
+
+}
+p {
+    font-size: 16pt;
+    font-weight: 700;
+    text-decoration: none;
+    display: inline;
+}
+.title-01 {
+    position: absolute;
+    top: 20px;
+    left: 50px;
+
+    margin: 0;
+    padding: 0;
+}
+.title-02 {
+    position: absolute;
+    top: 20px;
+    right: 50px;
+
+    margin: 0;
+    padding: 0;
+}
+/* MAIN MENU */
+#menu {
+    position: fixed;
+    float: left;
+    margin-top: 15%;
+}
+#menu > ul {
+    margin: 0;
+    padding: 0;
+}
+#menu > ul > li {
+    text-decoration: none;
+    list-style-type: none;
+    margin: 15px 0;
+    font-weight: 400;
+}
+#menu > ul > li> a {
+    text-decoration: none;
+    color: #fff;
+    transition: all .5s;
+}
+#menu > ul > li> a:hover {
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+#menu > ul > li> a.red:hover {
+    color: #df1f26;
+}
+#menu > ul > li> a.orange:hover {
+    color: #f16522;
+}
+#menu > ul > li> a.yellow:hover {
+    color: #ffe811;
+}
+#menu > ul > li> a.green:hover {
+    color: #37b34a;
+}
+#menu > ul > li> a.blue:hover {
+    color: #00adee;
+}
+#menu > ul > li> a.purple:hover {
+    color: #7f3f97;
+}
+#menu > ul > li> a.pink:hover {
+    color: #ec297b;
+}
+
+/* MENU TRACKLIST */
+#menu-tracklist {
+    display: inline;
+    position: fixed;
+    right: 50px;
+    top: 20%;
+    text-align: right;
+}
+#menu-tracklist > ul {
+    margin: 40px 0px;
+    padding: 0;
+}
+#menu-tracklist > ul > li {
+    text-decoration: none;
+    list-style-type: none;
+    margin: 15px 0;
+    font-weight: 400;
+}
+#menu-tracklist > ul > li> a {
+    text-decoration: none;
+    color: #fff;
+    transition: all .5s;
+}
+#menu-tracklist > ul > li> a:hover {
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+#menu-tracklist h3 {
+    transform: rotate(90deg);
+    position: absolute;
+    top: 60px;
+    right: 0;
+    margin: 0;
+    padding: 0;
+}
+/*
+#side-a::after {
+    content: "SIDE A";
+    display: block;
+    rotate: 90deg;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+*/
+#content {
+    height: 100vh;
+}
+.cover {
+    display: block;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: blue;
+}
+footer {
+    position: fixed;
+    bottom: 20px;
+
+    width: 96%;
+    height: fit-content;
+    margin: 0;
+    padding: 0;
+    
+}
+footer > p {
+
+    display: block;
+    width: 50%;
+    height: fit-content;
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+}
