@@ -93,10 +93,10 @@ p {
     display: inline;
     position: fixed;
     right: 80px;
-    top: 20%;
+    top: 10%;
     width: 25%;
     text-align: right;
-    background-color: #00adee;
+    
 }
 #menu-tracklist > ul {
     margin: 40px 0px;
@@ -117,6 +117,7 @@ p {
     font-weight: 700;
     letter-spacing: 1px;
 }
+/*
 #menu-tracklist h3 {
     transform-origin: 50 50;
     transform: rotate(90deg);
@@ -128,7 +129,7 @@ p {
     text-align: left;
     border: 1px solid red;
 }
-/*
+
 #side-a::after {
     content: "SIDE A";
     display: block;
@@ -146,7 +147,14 @@ p {
     height: 100%;
     margin-left: auto;
     margin-right: auto;
-    background-color: blue;
+    
+}
+#anim_cover {
+    display: block;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    
 }
 #playlist {
     width: 50%;
@@ -226,5 +234,23 @@ footer > p {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+
+}
+
+/* responsive */
+
+@media only screen and (min-width: 400px) {
+
+body {
+    background-color: red;
+    color: #fff;
+    font-family: "Gabarito", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 18;
+    font-weight: 700;
+    font-style: normal;
+    height: 100%;
+    margin: 0;
+}
 
 }
