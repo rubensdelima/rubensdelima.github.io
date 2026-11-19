@@ -14,9 +14,24 @@ body {
     height: 100vh;
     margin: 0 auto 0 auto;
     padding: 0;
-}
-header {
+    background-color: #00adee;
 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    'head head head head head'
+    'men cont cont cont trck'
+    'foot foot foot foot foot';
+}
+
+/* CABEÇALHO */
+header {
+    background-color: #37b34a;
+    grid-area: head;
+    height: 4vh;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 p {
     font-size: 16pt;
@@ -25,26 +40,20 @@ p {
     display: inline;
 }
 .title-01 {
-    position: absolute;
-    top: 20px;
-    left: 50px;
-
     margin: 0;
-    padding: 0;
+    align-self: center;
 }
 .title-02 {
-    position: absolute;
-    top: 20px;
-    right: 50px;
-
     margin: 0;
-    padding: 0;
+    text-align: right;
+    align-self: center;
 }
-/* MAIN MENU */
+/* MENU PRINCIPAL */
 #menu {
-    position: fixed;
-    float: left;
-    margin-top: 15%;
+    background-color: #7f3f97;
+    grid-area: men;
+    height: auto;
+    align-self: center;
 }
 #menu > ul {
     margin: 0;
@@ -65,7 +74,6 @@ p {
     font-weight: 700;
     letter-spacing: 1px;
 }
-
 #menu > ul > li> a.red:hover {
     color: #df1f26;
 }
@@ -87,19 +95,16 @@ p {
 #menu > ul > li> a.pink:hover {
     color: #ec297b;
 }
-
 /* MENU TRACKLIST */
 #menu-tracklist {
-    display: inline;
-    position: fixed;
-    right: 80px;
-    top: 10%;
-    width: 25%;
     text-align: right;
-    
+    background-color: #ec297b;
+    grid-area: trck;
+    height: auto;
+    align-self: center;
 }
 #menu-tracklist > ul {
-    margin: 40px 0px;
+    margin: 0px 0px;
     padding: 0;
 }
 #menu-tracklist > ul > li {
@@ -117,30 +122,12 @@ p {
     font-weight: 700;
     letter-spacing: 1px;
 }
-/*
-#menu-tracklist h3 {
-    transform-origin: 50 50;
-    transform: rotate(90deg);
-    position: relative;
-    top: -100px;
-    right: -50;
-    margin: 0;
-    padding: 0;
-    text-align: left;
-    border: 1px solid red;
-}
 
-#side-a::after {
-    content: "SIDE A";
-    display: block;
-    rotate: 90deg;
-    margin: 0;
-    padding: 0;
-    text-align: left;
-}
-*/
+/* CONTEÚDO */
 #content {
-    height: 100vh;
+    height: 92vh;
+    background-color: #ffe811;
+    grid-area: cont;
 }
 .cover {
     display: block;
@@ -214,43 +201,29 @@ p#credits {
     text-align: center;
     padding-top: 400px;
 }
-footer {
-    position: fixed;
-    bottom: 20px;
 
-    width: 96%;
-    height: fit-content;
+/* RODAPÉ */
+footer {
+    grid-area: foot;
+    height: 4vh;
     margin: 0;
     padding: 0;
-    
+    background-color: #f16522;
+
+    display: grid;
+    grid-template-columns: 1fr;
 }
 footer > p {
-
-    display: block;
-    width: 50%;
-    height: fit-content;
+    align-self: center;
+    width: 100%;
     margin: 0;
     padding: 0;
-    margin-left: auto;
-    margin-right: auto;
     text-align: center;
-
 }
 
 /* responsive */
 
 @media only screen and (min-width: 400px) {
 
-body {
-    background-color: red;
-    color: #fff;
-    font-family: "Gabarito", sans-serif;
-    font-optical-sizing: auto;
-    font-size: 18;
-    font-weight: 700;
-    font-style: normal;
-    height: 100%;
-    margin: 0;
-}
 
 }
