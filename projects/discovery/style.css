@@ -1,5 +1,5 @@
 body {
-    background-color: #000;
+    background-color: #0e0e0e;
     color: #fff;
     font-family: "Gabarito", sans-serif;
     font-optical-sizing: auto;
@@ -11,10 +11,10 @@ body {
 }
 #container {
     width: calc(100vw - 100px);
+    width: 98vw;
     height: 100vh;
     margin: 0 auto 0 auto;
     padding: 0;
-    background-color: #00adee;
 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -26,10 +26,8 @@ body {
 
 /* CABEÇALHO */
 header {
-    background-color: #37b34a;
     grid-area: head;
     height: 4vh;
-    
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -50,10 +48,12 @@ p {
 }
 /* MENU PRINCIPAL */
 #menu {
-    background-color: #7f3f97;
+    background-color: #000000;
     grid-area: men;
-    height: auto;
+    height: 100%;
     align-self: center;
+    display: grid;
+    align-items: center;
 }
 #menu > ul {
     margin: 0;
@@ -97,11 +97,13 @@ p {
 }
 /* MENU TRACKLIST */
 #menu-tracklist {
+    background-color: #000000;
     text-align: right;
-    background-color: #ec297b;
     grid-area: trck;
-    height: auto;
+    height: 100%;
     align-self: center;
+    display: grid;
+    align-items: center;
 }
 #menu-tracklist > ul {
     margin: 0px 0px;
@@ -125,23 +127,65 @@ p {
 
 /* CONTEÚDO */
 #content {
+    background-color: #000000;
     height: 92vh;
-    background-color: #ffe811;
     grid-area: cont;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+}
+#content-w-menu {
+    background-color: #000000;
+    height: 92vh;
+    grid-area: cont;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
 }
 .cover {
-    display: block;
     height: 100%;
     margin-left: auto;
     margin-right: auto;
-    
+}
+.encarte {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 #anim_cover {
     display: block;
     height: 100%;
     margin-left: auto;
     margin-right: auto;
-    
+}
+
+/* LETRA */
+#lyrics {
+    justify-content: left;
+    line-height: 90%;
+    width: 90%;
+    height: 90%;
+    background-image: url(images/tracks/one-more-time.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: grid;
+    align-content: center;
+}
+.track-title {
+    font-size: 12pt;
+}
+.track-credits {
+    font-size: 8pt;
+    font-weight: 400;
+}
+.track-lyrics {
+    font-size: 10pt;
+    font-weight: 400;
 }
 #playlist {
     width: 50%;
@@ -177,7 +221,7 @@ p {
 
 #duo {
     display: block;
-    width: 25%;
+    width: 30%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -202,13 +246,17 @@ p#credits {
     padding-top: 400px;
 }
 
+.back-to-tracklist {
+    display: none;
+}
+
 /* RODAPÉ */
 footer {
     grid-area: foot;
     height: 4vh;
     margin: 0;
     padding: 0;
-    background-color: #f16522;
+    
 
     display: grid;
     grid-template-columns: 1fr;
@@ -223,7 +271,218 @@ footer > p {
 
 /* responsive */
 
-@media only screen and (min-width: 400px) {
+@media (max-width: 600px) {
 
+#container {
+    width: calc(100vw - 20px);
+    height: 100vh;
+    margin: 0 auto 0 auto;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    'head head head head head'
+    'men men men men men'
+    'cont cont cont cont cont'
+    'trck trck trck trck trck'
+    'foot foot foot foot foot';
+}
 
+header {
+    
+    grid-area: head;
+    height: 4vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+p {
+    font-size: 12pt;
+    font-weight: 700;
+    text-decoration: none;
+    display: inline;
+}
+
+#menu {
+    height: 10vh;
+    display: grid;
+}
+#menu > ul {
+    align-self: center;
+    text-align: center;
+}
+#menu > ul > li {
+    display: inline-block;
+    text-decoration: none;
+    list-style-type: none;
+    margin: 8px 10px;
+    font-weight: 400;
+    font-size: 10pt;
+}
+
+#content {
+    height: 82vh;
+    
+    grid-area: cont;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+    overflow: hidden;
+}
+#content-w-menu {
+    height: 32vh;
+    
+    grid-area: cont;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+    overflow: hidden;
+}
+#content-track {
+    height: 78vh;
+    
+    grid-area: cont;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+    overflow: hidden;
+}
+.cover {
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.encarte {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#anim_cover {
+    
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+/* MENU TRACKLIST */
+#menu-tracklist {
+    text-align: center;
+    grid-area: trck;
+    height: 50vh;
+    align-self: center;
+}
+#menu-tracklist > ul > h3 {
+    margin: 6px 0px;
+}
+#menu-tracklist > ul {
+    margin: 0px 0px;
+    padding: 0;
+}
+#menu-tracklist > ul > li {
+    display: inline-block;
+    text-decoration: none;
+    list-style-type: none;
+    margin: 6px 10px;
+    font-weight: 400;
+    font-size: 10pt;
+}
+#menu-tracklist > ul > li> a {
+    text-decoration: none;
+    color: #fff;
+    transition: all .5s;
+}
+#menu-tracklist > ul > li> a:hover {
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.hidden {
+    display: none;
+}
+.back-to-tracklist {
+    display: block;
+    text-align: center;
+    grid-area: trck;
+    height: 4vh;
+    align-self: center;
+}
+.back-to-tracklist>a {
+    display: inline-block;
+    text-decoration: none;
+    list-style-type: none;
+    margin: 8px 10px;
+    font-weight: 400;
+    font-size: 10pt;
+    text-decoration: none;
+    color: #fff;
+    transition: all .5s;
+}
+
+/* LETRA */
+#lyrics {
+    justify-content: left;
+    line-height: 60%;
+    width: 90%;
+    height: 90%;
+    background-image: url(images/tracks/one-more-time.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: grid;
+    align-content: center;
+}
+.track-title {
+    font-size: 9pt;
+}
+.track-credits {
+    font-size: 6pt;
+    font-weight: 400;
+}
+.track-lyrics {
+    font-size: 7pt;
+    font-weight: 400;
+}
+
+/* PLAYLIST */
+#playlist {
+    width: 90%;
+    height: 96%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+}
+
+/* EXTRAS */
+#duo {
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#extras-text {
+    display: block;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 9pt;
+    font-weight: 400;
+    text-align: justify;
+    line-height: 100%;
+}
+
+p#credits {
+    display: block;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 10pt;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 0;
 }
