@@ -113,6 +113,16 @@ p {
     display: grid;
     align-items: center;
 }
+#menu-tracklist > section > ul > h3 {
+    margin: 0px 0px;
+    padding: 0px;
+    height: 20px;
+    width: 60px;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    
+}
 .side {
     grid-area: sd;
     transform: rotate(90deg);
@@ -130,19 +140,21 @@ p {
     grid-area: tt4;
 }
 #menu-tracklist > section > ul {
-    margin: 0px 0px;
+    margin: 30px 0px;
     padding: 0;
     display: grid;
+    grid-template-columns: auto 20px;
     grid-template-areas:
     'tt1 sd'
     'tt2 sd'
     'tt3 sd'
     'tt4 sd';
+    column-gap: 20px;
 }
 #menu-tracklist > section > ul > li {
     text-decoration: none;
     list-style-type: none;
-    margin: 10px 0;
+    margin: 5px 0;
     font-weight: 400;
 }
 #menu-tracklist > section > ul > li> a {
@@ -180,7 +192,6 @@ h3.sd-d {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
 }
 #content-w-menu {
     background-color: #000000;
@@ -191,6 +202,16 @@ h3.sd-d {
     justify-content: center;
     align-items: center;
     z-index: -1;
+}
+#content-track {
+    background-color: #000000;
+    height: 92vh;
+    grid-area: cont;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
 .cover {
     height: 100%;
@@ -208,6 +229,12 @@ h3.sd-d {
     margin-left: auto;
     margin-right: auto;
 }
+#anim_encarte {
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 /* LETRA */
 #lyrics {
@@ -215,7 +242,7 @@ h3.sd-d {
     line-height: 90%;
     width: 90%;
     height: 90%;
-    background-image: url(images/tracks/one-more-time.png);
+    background-image: url(images/anim_track_01.gif);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -489,7 +516,7 @@ p {
     overflow: hidden;
 }
 #content-w-menu {
-    height: 32vh;
+    height: 28vh;
     
     grid-area: cont;
     display: flex;
@@ -501,13 +528,11 @@ p {
 }
 #content-track {
     height: 78vh;
-    
     grid-area: cont;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    z-index: -1;
     overflow: hidden;
 }
 .cover {
@@ -521,32 +546,41 @@ p {
     margin-right: auto;
 }
 #anim_cover {
-    
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    
+}
+#anim_encarte {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
 }
 
 /* MENU TRACKLIST */
 #menu-tracklist {
-    text-align: center;
+    text-align: right;
     grid-area: trck;
-    height: 50vh;
+    height: 54vh;
+    padding-right: 0px;
     align-self: center;
 }
 #menu-tracklist > section > ul > h3 {
-    margin: 6px 0px;
+    justify-self: left;
+    align-self: center;
+    text-align: center;
 }
 #menu-tracklist > section > ul {
     margin: 0px 0px;
+    margin-bottom: 15px;
     padding: 0;
+    grid-template-columns: 3fr 1fr;
+    column-gap: 0px;
 }
 #menu-tracklist > section > ul > li {
     display: inline-block;
     text-decoration: none;
     list-style-type: none;
-    margin: 6px 10px;
+    margin: 3px 0px;
     font-weight: 400;
     font-size: 10pt;
 }
@@ -554,12 +588,13 @@ p {
     text-decoration: none;
     color: #fff;
     transition: all .5s;
+    
 }
 #menu-tracklist > section > ul > li> a:hover {
     font-weight: 700;
     letter-spacing: 1px;
 }
-.hidden {
+#menu-tracklist.hidden {
     display: none;
 }
 .back-to-tracklist {
@@ -587,7 +622,7 @@ p {
     line-height: 60%;
     width: 90%;
     height: 90%;
-    background-image: url(images/tracks/one-more-time.png);
+    background-image: url(images/anim_track_01.gif);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
